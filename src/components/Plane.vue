@@ -33,7 +33,7 @@ export default {
       return {
         width: size + 'px',
         height: this.size,
-        transform: 'scale(' + (size / 70) + ')',
+        transform: 'scale(' + (calc(size / 7)) + ')',
         '--bg-color': this.color,
         '--secondary-color': this.secondaryColor
       }

@@ -14,14 +14,14 @@ export default {
     innerStyles () {
       let size = parseInt(this.size)
       return {
-        transform: 'scale(' + (size / 60) + ')'
+        transform: 'scale(' + (calc(size / 60)) + ')'
       }
     },
     styles () {
       let size = parseInt(this.size)
       return {
         width: this.size,
-        height: size / 2 + 'px'
+        height: calc(size / 2) + 'px'
       }
     }
   }

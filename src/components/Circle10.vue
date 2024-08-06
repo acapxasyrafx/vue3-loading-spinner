@@ -16,7 +16,7 @@ export default {
     innerStyles () {
       let size = parseInt(this.size)
       return {
-        transform: 'scale(' + (size / 100) + ')'
+        transform: 'scale(' + (calc(size / 100)) + ')'
       }
     },
     styles () {

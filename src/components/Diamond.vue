@@ -20,8 +20,8 @@ export default {
     diamondStyle () {
       let size = parseInt(this.size)
       return {
-        width: size / 4 + 'px',
-        height: size / 4 + 'px',
+        width: calc(size / 4) + 'px',
+        height: calc(size / 4) + 'px',
         '--bg-color': this.color
       }
     },
@@ -29,7 +29,7 @@ export default {
       let size = parseInt(this.size)
       return {
         width: this.size,
-        height: size / 4 + 'px'
+        height: calc(size / 4) + 'px'
       }
     }
   }
@@ -57,7 +57,7 @@ export default {
       animation: diamonds $duration $timing infinite;
       @for $i from 1 through 4 {
         &:nth-child(#{$i}) {
-          animation-delay: math.div(-($duration, 1.5)) * $i;
+          animation-delay: -(calc($duration / 1.5)) * $i;
         }
       }
     }

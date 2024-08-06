@@ -18,7 +18,7 @@ export default {
       return {
         width: this.size,
         height: this.size,
-        transform: 'scale(' + (size / 75) + ')'
+        transform: 'scale(' + (calc(size / 75)) + ')'
       }
     }
   }

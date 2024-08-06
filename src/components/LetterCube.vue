@@ -25,9 +25,9 @@ export default {
   },
   computed: {
     innerStyles () {
-      let size = parseInt(this.size) / 2
+      let size = calc(parseInt(this.size) / 2)
       return {
-        transform: 'scale(' + (size / 75) + ')',
+        transform: 'scale(' + (calc(size / 75)) + ')',
         '--bg-color': this.color
       }
     },

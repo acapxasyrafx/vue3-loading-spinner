@@ -44,10 +44,10 @@ export default {
   },
   methods: {
     calcWidth (outerWidth) {
-      let r = 45 * Math.PI / 180
+      let r = calc(45 * Math.PI / 180)
       let s = Math.abs(Math.cos(r))
       let c = Math.abs(Math.sin(r))
-      return (outerWidth * c - outerWidth * s) / (Math.pow(c, 2) - Math.pow(s, 2))
+      return calc((outerWidth * c - outerWidth * s) / (Math.pow(c, 2) - Math.pow(s, 2)))
     }
   }
 }

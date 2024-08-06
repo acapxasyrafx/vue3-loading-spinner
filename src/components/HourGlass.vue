@@ -23,7 +23,7 @@ export default {
     innerStyles () {
       let size = parseInt(this.size)
       return {
-        transform: 'scale(' + (size / 64) + ')',
+        transform: 'scale(' + (calc(size / 64)) + ')',
         '--bg-color': this.color
       }
     },

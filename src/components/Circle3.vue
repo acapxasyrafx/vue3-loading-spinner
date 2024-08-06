@@ -13,14 +13,14 @@ export default {
     dotSize: {
       default () {
         let size = parseInt(this.size)
-        return size / 3 + 1
+        return calc(size / 3 + 1)
       }
     }
   },
   computed: {
     styles () {
       let size = parseInt(this.size)
-      let halfSize = size / 3
+      let halfSize = calc(size / 3)
       return {
         width: this.size,
         height: this.size,
