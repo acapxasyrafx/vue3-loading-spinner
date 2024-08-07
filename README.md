@@ -1,41 +1,24 @@
-# vue-loading-spinner
+# vue3-loading-spinner
 
-> Just another collection of loading spinners with Vue.js
-
-## Installation
-
-``` bash
-npm install --save vue-loading-spinner
+## Project setup
 ```
-or
-
-``` bash
-yarn add vue-loading-spinner
+npm install
 ```
 
-## Usage
-
-``` vue
-<template>
-  <div id="app">
-    <rotate-square2></rotate-square2>
-  </div>
-</template>
-
-<script>
-  import {RotateSquare2} from 'vue-loading-spinner'
-  export default {
-    components: {
-      RotateSquare2
-    }
-  }
-</script>
+### Compiles and hot-reloads for development
+```
+npm run serve
 ```
 
-## Demo
+### Compiles and minifies for production
+```
+npm run build
+```
 
-List of all spinner: [Demo](https://nguyenvanduocit.github.io/vue-loading-spinner/)
+### Lints and fixes files
+```
+npm run lint
+```
 
-## Development Setup
-
-Checkout branch `develop`
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

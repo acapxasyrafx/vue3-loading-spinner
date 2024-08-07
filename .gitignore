@@ -1,12 +1,33 @@
 .DS_Store
-node_modules/
-npm-debug.log
-/yarn.lock
-/src/App.vue
-/src/main.js
-/dist/static
-/dist/index.html
-/config
+node_modules
+/dist
+dist.*
 
-\.idea/
+/tests/e2e/reports/
+selenium-debug.log
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+.env
+.env.*
+*.zip
+*.tar.gz
+deployment-list.txt
+run-local.sh
+laravel-echo-server.json
 package-lock.json
